@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main-page</title>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="page.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+
+		window.addEventListener("load", (event) => {
+			// AOS
+			AOS.init({
+				duration: 1000,
+				once: true,
+			})
+		});
+
+		window.addEventListener("scroll", ()=>
+		{
+			const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			const scrolled = (winScroll / height) * 100;
+  			document.getElementById("myBar").style.width = scrolled + "%";
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
+
+		<div class="logo-wrapper"><a href="/index.htm"><img src='http://www.intrapanel.net/imagenes/lg_intra_l.png' /></a></div>
+
+		<div class="nav-wrapper">
+			<nav>
+				<a class="link-item" href="/index.htm"><i class="fa-solid fa-angle-right"></i> Home</a>
+				<a class="link-item" href="#services"> <i class="fa-solid fa-angle-right"></i> Services</a>
+				<a class="link-item" href="#about"><i class="fa-solid fa-angle-right"></i> About us</a>
+				<a class="link-item" href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a>
+			</nav>
+		</div>
+	</header>
+
+
+
+
+
+	<section class="hero" data-aos="fade">
+		<div class="hero-content">
+			<h1 class="hero-title" data-aos="fade-down">
+				INTRAPANEL.net
+			</h1>
+
+			<h2 class="hero-subtitle" data-aos="fade-down">
+				Management and control system for virgin olive oil tasting panels
+			</h2>
+
+			<button type="button" class="hero-button" data-aos="fade-up" onclick="signin.htm">
+				Sign in
+			</button>
+
+			<a class="hero-link" href="#learn" data-aos="fade-up">Learn more</a>
+
+		</div>
+
+	</section>
+
+
+
+
+	<section class="services">
+		<a name="services"></a>
+		<div class="section-title"><span>01</span>Services</div>
+		<div class="content" data-aos="fade-up">
+			<article>
+				<h3><i class="fa-solid fa-align-justify"></i></i>For Tasters</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas commodi fugiat ad quae nisi asperiores quibusdam facere itaque ducimus fugit numquam officiis aperiam tempore consequuntur, minima similique dignissimos aut!</p>
+				<a href="#">Sign in ▶</a>
+			</article>
+
+			<article>
+				<h3><i class="fa-solid fa-laptop"></i>For Panel leader</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas commodi fugiat ad quae nisi asperiores quibusdam facere itaque ducimus fugit numquam officiis aperiam tempore consequuntur, minima similique dignissimos aut!</p>
+				<a href="#">Sign in ▶</a>
+			</article>
+		</div>
+	</section>
+
+
+	<section class="about">
+		<a name="about"></a>
+		<div class="section-title"><span>02</span>About</div>
+		<div class="content" data-aos="fade-up">
+			<article>
+				<div class="img-wrapper"><img src="images/TerraOleum.jpeg"></div>
+				<h3>Fundación del Olivar</h3>
+				<p>La Fundación para la Promoción y el Desarrollo del Olivar y del Aceite de Oliva es el resultado de los esfuerzos iniciados por el sector productor, junto con las administraciones públicas y entidades financieras andaluzas en favor del aceite de oliva, su conocimiento y prestigio.</p>
+				<p>Con una visión estratégica orientada hacia la mejora de la gestión del conocimiento aplicado al sector productor, la Fundación del Olivar planifica, desarrolla e implanta proyectos de base tecnológica.</p>
+				<p>Desde su constitución en 1990, han sido numerosas las iniciativas emprendidas por la Fundación del Olivar y que actualmente administra. Entre otros proyectos cabe destacar:</p>
+				<ul>
+					<li>POOLred España. Sistema de Información de Precios en Origen del Aceite de Oliva.</li>
+					<li>Sistema INTRAPANEL para la administración y control de paneles de cata.</li>
+					<li>Promotor de EXPOLIVA, Feria Internacional del Aceite de Oliva e Industrias Afines.</li>
+					<li>Organizador del Simposium Científico-Técnico de EXPOLIVA.</li>
+					<li>Organizador del Salón Internacional del Aceite de Oliva Virgen Extra, EXPOLIVA VIRGEN EXTRA.</li>
+					<li>Terra Oleum. Museo Activo del Aceite de Oliva y la Sostenibilidad.</li>
+					<li>Desarrollo e implantación del Centro de Información y Documentación del Olivar y el Aceite de Oliva. CIMDOL.</li>
+					<li>Campañas de promoción y publicidad del aceite de oliva virgen.</li>
+					<li>Proyectos de investigación en torno al olivar y el aceite de oliva.</li>
+					<li>Desarrollo de soluciones de comercio electrónico.</li>
+					<li>Sistemas de control para el sector oleícola.</li>
+					
+				</ul>
+			</article>
+		
+		</div>
+	</section>
+
+
+	<section class="contact">
+		<a name="contact"></a>
+		<div class="section-title"><span>03</span>Contact</div>
+		<div class="content" data-aos="fade-up">
+			<article>
+				<div class="img-wrapper"><img src="images/smartphone.jpg"></div>
+				<p>Fundación para la Promoción y el Desarrollo del olivar y del Aceite de Oliva</p>
+				<address>
+					<p><i class="fa-solid fa-building"></i>Edificio Terra Oleum | Parque Geolit</p>
+					<p><i class="fa-solid fa-road"></i>Calle Sierra Morena 13a, 23620</p>
+					<p><i class="fa-solid fa-map"></i>Mengibar | Jaén</p>
+					<p><i class="fa-solid fa-phone"></i>+34 953 29 50 90 | +34 953 27 49 76</p>
+					<p><i class="fa-solid fa-envelope"></i>info@intrapanel.net</p>
+				</address>				
+			</article>
+		
+		</div>
+	</section>
+
+
+
+	<!-- https://preview.colorlib.com/theme/humanresources/ -->
+
+	<footer class="templateux-footer bg-light">
+
+		<p>Fundación para la Promoción y el Desarrollo del Olivar y del Aceite de Oliva &copy;2022</p>
+
+
+	</footer> 
+
+</body>
+
+</html>
