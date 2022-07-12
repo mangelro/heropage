@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" section-content="IE=edge">
+	<meta name="viewport" section-content="width=device-width, initial-scale=1.0">
 	<title>Main-page</title>
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="page.css" />
@@ -14,6 +14,7 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
+
 
 		window.addEventListener("load", (event) => {
 			// AOS
@@ -40,25 +41,25 @@
 		<div class="progress-container">
 			<div class="progress-bar" id="myBar"></div>
 		</div>
-
 		<div class="logo-wrapper"><a href="/index.htm"><img src='http://www.intrapanel.net/imagenes/lg_intra_l.png' /></a></div>
 
 		<div class="nav-wrapper">
 			<nav>
-				<a class="link-item" href="/index.htm"><i class="fa-solid fa-angle-right"></i> Home</a>
-				<a class="link-item" href="#services"> <i class="fa-solid fa-angle-right"></i> Services</a>
-				<a class="link-item" href="#about"><i class="fa-solid fa-angle-right"></i> About us</a>
-				<a class="link-item" href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a>
+				<a class="link-item" href="/index.htm"><i class="fa-solid fa-angle-right"></i>Home</a>
+				<a class="link-item" href="#services"><i class="fa-solid fa-angle-right"></i>Services</a>
+				<a class="link-item" href="#about"><i class="fa-solid fa-angle-right"></i>About us</a>
+				<a class="link-item" href="#contact"><i class="fa-solid fa-angle-right"></i>Contact</a>
 			</nav>
 		</div>
+			
 	</header>
-
+	
 
 
 
 
 	<section class="hero" data-aos="fade">
-		<div class="hero-content">
+		<div class="hero-section-content">
 			<h1 class="hero-title" data-aos="fade-down">
 				INTRAPANEL.net
 			</h1>
@@ -83,7 +84,7 @@
 	<section class="services">
 		<a name="services"></a>
 		<div class="section-title"><span>01</span>Services</div>
-		<div class="content" data-aos="fade-up">
+		<div class="section-content" data-aos="fade-up">
 			<article>
 				<h3><i class="fa-solid fa-align-justify"></i></i>For Tasters</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas commodi fugiat ad quae nisi asperiores quibusdam facere itaque ducimus fugit numquam officiis aperiam tempore consequuntur, minima similique dignissimos aut!</p>
@@ -96,15 +97,23 @@
 				<a href="#">Sign in ▶</a>
 			</article>
 		</div>
+		<hr style="margin:0 5rem;" />
 	</section>
 
 
 	<section class="about">
 		<a name="about"></a>
 		<div class="section-title"><span>02</span>About</div>
-		<div class="content" data-aos="fade-up">
+		<div class="section-content" data-aos="fade-up">
 			<article>
-				<div class="img-wrapper"><img src="images/TerraOleum.jpeg"></div>
+				<div class="img-wrapper">
+					<picture>
+						<source media="(max-width: 600px)" srcset="images/TerraOleum400.jpg" />
+						<source media="(max-width: 700px)" srcset="images/TerraOleum600.jpg" />
+						<img src="images/TerraOleum800.jpg" loading="lazy"/>
+					</picture>
+				</div>
+
 				<h3>Fundación del Olivar</h3>
 				<p>La Fundación para la Promoción y el Desarrollo del Olivar y del Aceite de Oliva es el resultado de los esfuerzos iniciados por el sector productor, junto con las administraciones públicas y entidades financieras andaluzas en favor del aceite de oliva, su conocimiento y prestigio.</p>
 				<p>Con una visión estratégica orientada hacia la mejora de la gestión del conocimiento aplicado al sector productor, la Fundación del Olivar planifica, desarrolla e implanta proyectos de base tecnológica.</p>
@@ -121,18 +130,17 @@
 					<li>Proyectos de investigación en torno al olivar y el aceite de oliva.</li>
 					<li>Desarrollo de soluciones de comercio electrónico.</li>
 					<li>Sistemas de control para el sector oleícola.</li>
-					
 				</ul>
 			</article>
-		
 		</div>
+		<hr style="margin:0 5rem;" />
 	</section>
 
 
 	<section class="contact">
 		<a name="contact"></a>
 		<div class="section-title"><span>03</span>Contact</div>
-		<div class="content" data-aos="fade-up">
+		<div class="section-content" data-aos="fade-up">
 			<article>
 				<div class="img-wrapper"><img src="images/smartphone.jpg"></div>
 				<p>Fundación para la Promoción y el Desarrollo del olivar y del Aceite de Oliva</p>
@@ -153,10 +161,8 @@
 	<!-- https://preview.colorlib.com/theme/humanresources/ -->
 
 	<footer class="templateux-footer bg-light">
-
 		<p>Fundación para la Promoción y el Desarrollo del Olivar y del Aceite de Oliva &copy;2022</p>
-
-
+	
 	</footer> 
 
 </body>
